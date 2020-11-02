@@ -10,7 +10,6 @@ const v_model = () => import('../components/v-model')
 const parent_child_components = () => import('../components/parent-child-components')
 const slots = () => import('../components/slots')
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -42,7 +41,7 @@ export default new Router({
 		{
 			path:'/slots',
 			component:slots
-		}
+		},
 	],
 	mode:'history',
 	// linkActiveClass:'active',

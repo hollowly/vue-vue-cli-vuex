@@ -13,27 +13,25 @@
 		<router-view :clis='lis' 
 		:cnum1='num1' :cnum2='num2' 
 		@num1Change='num1Change' @num2Change='num2Change'>
-		<cpn>
+
+
+		<cpn1>
 			<template slot-scope='slot'>
-				<ul>
-					<li v-for='(item, index) in slot.data' :key='index'>{{item}} - </li>
-				</ul>
+				<span v-for='(item, index) in slot.data' :key='index'>{{item}} - </span>
 			</template>
-		</cpn>
-		<cpn>
+		</cpn1>
+		<cpn1></cpn1>
+		<cpn1>
 			<template slot-scope="slot">
-				<ul>
-					<li v-for='(item, index) in slot.data' :key='index'>{{item}} * </li>
-				</ul>
+				<span v-for='(item, index) in slot.data' :key='index'>{{item}} * </span>
 			</template>
-		</cpn>
-		<cpn></cpn>
+		</cpn1>
 		</router-view>
   </div>
 </template>
 
 <script>
-import cpn from './components/slots'
+import cpn1 from './components/slots'
 export default {
 	name: 'App',
 	data() {
@@ -53,7 +51,7 @@ export default {
 		},
 	},
 	components: {
-		cpn
+		cpn1,
 	}
 }
 </script>
