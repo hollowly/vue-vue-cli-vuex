@@ -6,7 +6,6 @@
 				<li v-for='(item, index) in books' :key='index'>{{item}}</li>
 			</ul>
 		</slot>
-		
 	</div>
 </template>
 
