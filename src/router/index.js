@@ -63,6 +63,9 @@ export default new Router({
 					component:route_nesting_two,
 				}
 			]
+		},
+		{
+			
 		}
 	],
 	mode:'history',
