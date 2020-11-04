@@ -12,7 +12,7 @@ const slots = () => import('../components/slots')
 const route_nesting = () => import('../components/route-nesting')
 const route_nesting_one = () => import('../components/route-nesting-one')
 const route_nesting_two = () => import('../components/route-nesting-two')
-
+const router_transfer = () => import('../components/router-transfer')
 
 Vue.use(Router)
 
@@ -64,6 +64,10 @@ export default new Router({
 				}
 			]
 		},
+		{
+			path:'/router-transfer',
+			component:router_transfer,
+		}
 	],
 	mode:'history',
 	// linkActiveClass:'active',
