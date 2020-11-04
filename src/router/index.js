@@ -13,6 +13,8 @@ const route_nesting = () => import('../components/route-nesting')
 const route_nesting_one = () => import('../components/route-nesting-one')
 const route_nesting_two = () => import('../components/route-nesting-two')
 const router_transfer = () => import('../components/router-transfer')
+const router_transfer_one = () => import('../components/router-transfer-one')
+const router_transfer_two = () => import('../components/router-transfer-two')
 
 Vue.use(Router)
 
@@ -67,6 +69,16 @@ export default new Router({
 		{
 			path:'/router-transfer',
 			component:router_transfer,
+			children: [
+				{
+					path:'router-transfer-one',
+					component:router_transfer_one
+				},
+				{
+					path:'router-transfer-two',
+					component:router_transfer_two
+				}
+			]
 		}
 	],
 	mode:'history',
