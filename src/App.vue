@@ -11,11 +11,7 @@
 		<h1><router-link to='/slots'>slots</router-link></h1>
 		<h1><router-link to='/route-nesting'>route-nesting</router-link></h1>
 		<hr>
-		<router-view :clis='lis' 
-		:cnum1='num1' :cnum2='num2' 
-		@num1Change='num1Change' @num2Change='num2Change'>
-
-
+		<router-view :clis='lis' :cnum1='num1' :cnum2='num2' @num1Change='num1Change' @num2Change='num2Change'>
 		<cpn1>
 			<template slot-scope='slot'>
 				<span v-for='(item, index) in slot.data' :key='index'>{{item}} - </span>
@@ -28,6 +24,8 @@
 			</template>
 		</cpn1>
 		</router-view>
+
+		
   </div>
 </template>
 

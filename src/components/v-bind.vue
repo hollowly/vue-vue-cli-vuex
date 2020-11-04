@@ -19,7 +19,7 @@ export default {
 			message: 'hello Vue',
 			isActive:false,
 			url: 'https://www.cnblogs.com/hollows/',
-			imgUrl: 'https://images.cnblogs.com/cnblogs_com/ache/1644357/o_20022410503214.jpg'
+			imgUrl: 'https://files.dbnuo.com/wallpaper/wallhaven-dgojvj.webp'
 		}
 	},
 	methods: {
